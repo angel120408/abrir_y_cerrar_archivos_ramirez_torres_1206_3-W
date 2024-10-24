@@ -1,0 +1,54 @@
+print("Primera parte")
+a = open("archivo de practica.txt","r")
+print(a.read())
+
+a.close()
+
+print(" ")
+print("Segunda parte")
+f = open("archivo de practica.txt","r")
+print(f.read( 5))
+print(f.read(15))
+print(f.read(20))
+
+
+f.close()
+
+print(" ")
+#print("Tercera parte")
+
+f = open("archivo de practica.txt","a")
+f.write("Al archivo ahora es masgrande")
+
+f.close()
+
+f = open("archivo de practica.txt","r")
+print(f.read())
+
+f.close()
+
+print(" ")
+print("ejemplo #6")
+
+f = open("archivo de practica.txt","w")
+f.write("Se elimino el contenido")
+
+f.close()
+
+print("Ejemplo #7")
+
+import os
+os.remove("archivo de practica.txt")
+
+print("Ejemplo #8")
+
+import os
+if os.path.exists("archivo de practica.txt"):
+    os.remove("archivo de practica.txt")
+else:
+    print("Ya no existe el archivo")
+
+print("Ejemplo #9")
+
+import os
+os.rmdir("archivo de practica.txt")
