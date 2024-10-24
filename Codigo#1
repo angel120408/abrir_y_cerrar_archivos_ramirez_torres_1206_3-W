@@ -1,0 +1,6 @@
+archivo=open("ramirez_1206_3°W.txt","r")
+print(archivo.readable())
+
+
+archivo.close()
+
